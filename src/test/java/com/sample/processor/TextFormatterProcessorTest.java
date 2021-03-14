@@ -1,7 +1,8 @@
 package com.sample.processor;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TextFormatterProcessorTest {
 
@@ -16,7 +17,6 @@ public class TextFormatterProcessorTest {
                 res);
     }
 
-
     @Test
     public void testTextAlignmentToRightWidth10(){
         TextFormatterProcessor textFormatterProcessor = new TextFormatterProcessor(10, Alignment.RIGHT_ALIGN);
@@ -26,7 +26,6 @@ public class TextFormatterProcessorTest {
                         "     right\n" +
                         "   aligned\n",
                 res);
-
     }
 
     @Test

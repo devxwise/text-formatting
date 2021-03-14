@@ -1,11 +1,12 @@
 package com.sample.algorithm.formatter;
 
 import com.sample.entity.Line;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 import java.util.Collections;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TextCenterAlignmentTest {
 

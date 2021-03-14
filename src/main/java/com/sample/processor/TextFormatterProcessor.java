@@ -1,7 +1,7 @@
 package com.sample.processor;
 
-import com.sample.algorithm.formatter.TextAlignmentFactory;
 import com.sample.algorithm.formatter.TextAlignment;
+import com.sample.algorithm.formatter.TextAlignmentFactory;
 import com.sample.algorithm.split.FullWordsTextSplitter;
 import com.sample.algorithm.split.TextSplitter;
 
