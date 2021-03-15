@@ -21,7 +21,9 @@ public class TextFormatterApplication {
         System.out.println("Enter text:");
         String text = scanner.nextLine();
 
+        //call text formatter processor
         TextFormatterProcessor textFormatterProcessor = new TextFormatterProcessor(width, alignment);
+        //format and print result
         System.out.println(textFormatterProcessor.format(text));
     }
 

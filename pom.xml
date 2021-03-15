@@ -21,7 +21,24 @@
             <version>4.13</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <finalName>formatter</finalName>
+                    <archive>
+                        <manifest>
+                            <mainClass>
+                                com.sample.TextFormatterApplication
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

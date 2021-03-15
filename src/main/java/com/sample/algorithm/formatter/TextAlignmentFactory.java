@@ -20,6 +20,7 @@ public class TextAlignmentFactory {
                 return new TextCenterAlignment();
             case JUSTIFY:
                 return new TextJustifyAlignment();
+            case HARD:
             default:
                 throw new TextAlignmentException("Unsupported text alignment algorithm");
         }

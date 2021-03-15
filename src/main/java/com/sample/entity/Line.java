@@ -3,10 +3,15 @@ package com.sample.entity;
 import java.util.List;
 import java.util.stream.IntStream;
 
+/**
+ * Class for holding words in individual text line
+ */
 public class Line {
 
+    //words in line
     private final List<String> words;
 
+    //number of chard in all line's words (not including spaces)
     private final int numChars;
 
     public Line (List<String> words, int numChars){
