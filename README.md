@@ -1,7 +1,7 @@
 # Text Formatting Tool
 Java application which reads a text from standard in and writes the formatted output to the console
 
-##How to use
+## How to use
 - Clone repository or extract Zip file
 - From the root directory, run:
 ```shell script
@@ -24,7 +24,7 @@ java -jar formatter.jar justify 15
 
 - You'll be prompted to enter the text to be formatted
 
-##How to add more alignment algorithms
+## How to add more alignment algorithms
 - Create a new `class` which implements `TextAlignment` under `com.sample.algorithm.formatter`
 - Provide implementation for:
 ```java
@@ -32,6 +32,6 @@ int[] pad(Line line, int width, int totalLines, int lineIdx)
 ```
 - Add/confirm your alignment algorithm's name is in `Alignment` and your class can be initiated in `TextAlignmentFactory`
 
-##Areas for improvements
+## Areas for improvements
 - For a large text block, we should consider forking the text into smaller blocks and work on each one in a different thread individually, and join after each completed
 - Try to reduce space complexity
