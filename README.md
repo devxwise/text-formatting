@@ -12,21 +12,21 @@ mvn clean package
 ```shell script
 java -jar formatter.jar <Alignment> <Line width>
 ``` 
-where permitted values are:
+where accepted values are:
 ```text
 - Alignment: currently supported: LEFT, RIGHT, CENTER, JUSTIFY (not case sensitive)
 - Line width: any positive (Integer) number (>0)  
 ```
 For example:
 ```shell script
-java -jar formatter.jar justify 15
+java -jar formatter.jar left 10
 ```
 
 - You'll be prompted to enter the text to be formatted
 
 ## How to add more alignment algorithms
 - Create a new `class` which implements `TextAlignment` under `com.sample.algorithm.formatter`
-- Provide implementation for:
+- Provide implementation for method:
 ```java
 int[] pad(Line line, int width, int totalLines, int lineIdx)
 ```

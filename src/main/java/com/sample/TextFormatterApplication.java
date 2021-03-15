@@ -24,6 +24,7 @@ public class TextFormatterApplication {
         //call text formatter processor
         TextFormatterProcessor textFormatterProcessor = new TextFormatterProcessor(width, alignment);
         //format and print result
+        System.out.println("The formatted text:");
         System.out.println(textFormatterProcessor.format(text));
     }
 
